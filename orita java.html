@@ -1,0 +1,59 @@
+<html> 
+    <head>
+        <title>solo javascript</title>
+        <style>
+            body{
+                background-color: #666464;
+            }
+            .semaforo1{
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+               position: relative;
+            }
+            input.semaforo1[type="submit"]{
+                background-color: #83091a;
+            }
+            input.semaforo1[type="submit"]:hover {
+                background:rgb(255, 89, 103); 
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="comentarios"></div>
+        <form class="semaforo">
+               <input type="submit" class="semaforo1">
+       
+                    <input type="text" id="pruebajs">
+                    <input type="text" id="pruebajs2">
+                    <input type="button" value="suma" onclick="alert( suma(10,50) );">
+        </form>
+                
+        <script>          
+            var suma = function(pruebajs,pruebajs2)
+            {
+             var nprueba= parseFloat(document.getElementById("pruebajs").value);
+             var nprueba2= parseFloat(document.getElementById("pruebajs2").value);
+             var resultado= nprueba+nprueba2;
+             return resultado;
+            } 
+            alert("beta");
+            var nombre;
+            nombre=prompt("ingrese su nombre", "nombre");
+                   
+            var elemento =document.createElement("h3");
+            //este es para el contenido del elemento
+            var contenido= document.createTextNode("sona de comentarios");
+                  //este pa unir los elementos
+            elemento.appendChild("contenido");
+            elemento.setAttribute("align","center");
+            document.getElementById("comentarios").appendChild(elemento);
+              
+            var cuadro= document.createElement("div");
+            cuadro.setAttribute("class","blue");
+            document.body.appendChild(cuadro);
+        </script>        
+    </body>
+</html>
+   

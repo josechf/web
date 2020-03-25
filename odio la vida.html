@@ -1,0 +1,40 @@
+<html>
+   <head>
+        <title>alv todo</title>
+   </head>
+    <body>
+        <ol>
+            <li id="lavrga1">abduscan </li>
+            <li id="lavrga2">abduscan x2</li>
+        </ol>
+        <script>
+          
+             var elemento= document.createElement("h1");
+             var  contenido=document.createTextNode("nuevo Texto");
+                 elemento.appendChild(contenido);
+                 //esta vaina d padre es para reemplazar el li 1
+             var padre = document.getElementsByName("li")[0].parentNode;    
+             referencia= document.getElementsByName("li")[0];
+             padre.replaceChild(elemento,referencia);
+
+             
+             //el hijo va a ir de primero, pero entre los li
+            var hijo =document.getElementsByTagName("li")[0];
+             hijo.insertBefore(elemento,hijo);
+             //ahora a cambiar el mismo contenido del li
+             var cambiar=document.getElementById("lavrga1");
+             //el textContent cambia el texto , el innerHTML puede agregar codigo html
+             cambiar.textContent= "contenido cambiado";
+
+             
+             //a contunuacion las sobras q quiza utilice despues
+             var elemento= document.createElement("h3");
+               //este es para el contenido del elemento
+               var contenido= document.createTextNode("sona de comentarios");
+               //este pa unir los elementos
+               elemento.appendChild("contenido"); 
+                elemento.setAttribute("align","center");
+               document.getElementById("comentarios").appendChild(elemento);
+        </script>
+    </body>
+</html>

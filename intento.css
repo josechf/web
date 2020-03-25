@@ -1,0 +1,121 @@
+header{
+    width: 100%;
+    background:#173250;
+    height: 150px;
+    /*padding es margen*/
+    padding: 20px;
+    margin: 0%;
+    overflow: hidden;
+    /*opacity es para opacidad*/
+}
+div.logotipo{
+      
+      line-height: 100px;
+      float: left;
+      font-family: "Kumar One";
+      font-size: 30px;
+}
+span{
+    color: red;
+    font-family: "Love Ya like A Sister"; 
+}
+nav{
+     float:right;
+     line-height: 100px;
+}
+nav a{
+    line-height: normal;
+    color:#fff;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Black Ops One";
+    border-radius: 20%;
+    /*esto es para el efecto d transicion al tocar el boton*/
+    -webkit-transition:all 500ms ease;
+     -o-transition:all 500ms ease;
+     transition: all 500ms ease;
+}
+
+a:hover {
+    background:rgb(255, 89, 103); 
+}
+.header2{
+   position: fixed;
+    height: 100px;
+}
+.header2.logotipo{
+    line-height: 100px;
+    font-size: 30px;
+}
+.header2 nav{
+   line-height: 100px;
+}
+@media screen and (max-width: 950px){
+    header .logotipo,
+    header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+}
+.header2{
+    height: auto;
+}
+.header2 nav,
+.header2.logotipo{
+  line-height:50px;
+}
+h2{
+    position:relative;
+    left:200px ;
+    font-family: Helvetica,"scans-serif",;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+p{
+   width: 50%;
+/* text-align:normal;*/
+}
+form{
+    background: #e5e5f1;
+    width: 300px;
+    padding: 20px;
+    position:absolute;
+   left: 900px;
+   top: 250px;
+}
+textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    }
+input:focus, textarea:focus {
+    border: 1px solid #1668C4;
+}   
+input[type="submit"] {
+    margin-bottom:0; 
+    background:#1668C4;
+    color:#fff;
+    border:none;
+    margin: 5px;
+} 
+input[type="submit"]:hover {
+    background:#4A88F4; 
+}
+hr{
+    width: 50%;
+    float: left;
+    color:#83091a ;
+    border:2px solid #83091a;
+}
